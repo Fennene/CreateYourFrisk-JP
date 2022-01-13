@@ -151,56 +151,61 @@ public class OptionsScript : MonoBehaviour {
         string response;
         switch(buttonName) {
             case "ResetRG":
-                response = "Resets all Real Globals.\n\n"
-                         + "Real Globals are variables that persist through battles, but are deleted when CYF is closed.";
+                response = "全ての Real Globals を削除します。\n\n"
+                         + "Real Globals は\nCYFを開いている間存続する変数です。\n"
+                         + "ただし、CYFを閉じると削除されます。";
                 return !GlobalControls.crate ? response : Temmify.Convert(response);
             case "ResetAG":
-                response = "Resets all AlMighty Globals.\n\n"
-                         + "AlMighty Globals are variables that are saved to a file, and stay even when you close CYF.\n\n"
-                         + "The options on this screen are stored as AlMighties.";
+                response = "全ての AlMighty Globals を削除します。\n\n"
+                         + "AlMighty Globals は\nファイルに保存される変数です。\n"
+                         + "CYFを閉じてもデータは残ります。\n\n"
+                         + "このオプションも AlMighty Globals として保存されています。";
                 return !GlobalControls.crate ? response : Temmify.Convert(response);
             case "ClearSave":
-                response = "Clears your save file.\n\n"
-                         + "This is the save file used for CYF's Overworld.\n\n"
-                         + "Your save file is located at:\n\n";
+                response = "セーブファイルを初期化します。\n\n"
+                         + "CYFのオーバーワールドのセーブファイルを\n削除します。\n\n"
+                         + "セーブファイルの場所は以下の通り:\n\n";
                 if (!GlobalControls.crate)
                     // return response + Application.persistentDataPath + "/save.gd</size></b>";
                     return response + "<b><size='14'>" + Application.persistentDataPath + "/save.gd</size></b>";
                 else
                     return Temmify.Convert(response) + "<b><size='14'>" + Application.persistentDataPath + "/save.gd</size></b>";
             case "Safe":
-                response = "Toggles safe mode.\n\n"
-                         + "This does nothing on its own, but mod authors can detect if you have this enabled, and use it to filter unsafe content, such as blood, gore, and swear words.";
+                response = "セーフモードの切り替え\n\n"
+                         + "このモード自体に機能はありませんが、\n"
+                         + "Mod作成者がこの設定を確認して、\n"
+                         + "流血表現や冒涜的な内容などに\n"
+                         + "フィルタリングする可能性があります。";
                 return !GlobalControls.crate ? response : Temmify.Convert(response);
             case "Retro":
-                response = "Toggles retrocompatibility mode.\n\n"
-                         + "This mode is designed specifically to make encounters imported from Unitale v0.2.1a act as they did on the old engine.\n\n\n\n";
+                response = "Retrocompatibility Mode の切り替え\n\n"
+                         + "このモードは Unitale v0.2.1a で作成されたコンテンツを動作させるための\nモードです。\n\n\n\n";
                 if (!GlobalControls.crate)
-                    return response + "<b>CAUTION!\nDISABLE</b> this for mods made for CYF. This feature should only be used with Mods made for\n<b>Unitale v0.2.1a</b>.";
+                    return response + "<b>警告!\n</b> CYFで作られたModではこのモードを\n<b>無効(off)</b>にしてください。\nこの機能は <b>Unitale v0.2.1a</b> で作られたModのみに使用してください。";
                 else
                     return Temmify.Convert(response) + "<b>" + Temmify.Convert("CAUTION!\nDISABLE") + "</b> " + Temmify.Convert("this for mods made for CYF.");
             case "Fullscreen":
-                response = "Toggles blurless Fullscreen mode.\n\n"
-                         + "This controls whether fullscreen mode will appear \"blurry\" or not.\n\n\n"
-                         + "Press <b>F4</b> or <b>Alt+Enter</b> to toggle Fullscreen.";
+                response = "鮮明なフルスクリーンモードの切り替え\n\n"
+                         + "これはフルスクリーンにしたときにぼやけるかぼやけないようにするか決められます。\n\n\n"
+                         + "<b>F4キー</b>または<b>Alt+Enterキー</b>でフルスクリーンになります";
                 return !GlobalControls.crate ? response : Temmify.Convert(response);
             case "Scale":
-                response = "Scales the window in Windowed mode.\n\n"
-                         + "This is useful for especially large screens (such as 4k monitors).\n\n"
-                         + "Has no effect in Fullscreen mode.";
+                response = "ウィンドウの表示倍率\n\n"
+                         + "大きなスクリーン(例えば4kのスクリーン)で\n表示する場合に役に立ちます。\n\n"
+                         + "フルスクリーンでは何の影響もありません。";
                 return !GlobalControls.crate ? response : Temmify.Convert(response);
             case "Discord":
-                response = "Changes how much Discord Rich Presence should display on your profile regarding you playing Create Your Frisk.\n\n"
-                         + "<b>Everything</b>: Everything is displayed: the mod you're playing, a timestamp and a description.\n\n"
-                         + "<b>Game Only</b>: Only shows that you're playing Create Your Frisk.\n\n"
-                         + "<b>Nothing</b>: Disables Discord Rich Presence entirely.\n\n"
-                         + "If CYF's connection to Discord is lost, you will have to restart CYF if you want your rich presence back.";
+                response = "CYFをプレイ中にDiscordでどのように表示するのか決めます。(Discord Rich Presence)\n\n"
+                         + "<b>Everything</b>: 全て表示: 遊んでいるModや時間、説明の全てを表示\n\n"
+                         + "<b>Game Only</b>: CreateYourFriskで遊んでいることだけを表示します。\n\n"
+                         + "<b>Nothing</b>: 何も表示しません。\n\n"
+                         + "CYFのDiscorfへの接続が切断された場合、正しくDiscordに表示させるにはCYFを再起動する必要性があります。";
                 return !GlobalControls.crate ? response : Temmify.Convert(response);
             case "Exit":
-                response = "Returns to the Mod Select screen.";
+                response = "Mod選択画面に戻ります。";
                 return !GlobalControls.crate ? response : Temmify.Convert(response);
             default:
-                return !GlobalControls.crate ? "Hover over an option and its description will appear here!" : "HOVR OVR DA TING N GET TEXT HEAR!!";
+                return !GlobalControls.crate ? "オプションにマウスを合わせると、\nここに説明が表示されます。" : "HOVR OVR DA TING N GET TEXT HEAR!!";
         }
     }
 
