@@ -25,7 +25,7 @@ public class DisclaimerScript : MonoBehaviour {
             Version.GetComponent<Text>().color              = new Color(1f, 1f, 1f, 1f);
             Version.GetComponent<Text>().text               = "Not Unitale v0.2.1a";
         } else
-            Version.GetComponent<Text>().text = "v" + GlobalControls.CYFversion;
+            Version.GetComponent<Text>().text = "v" + GlobalControls.CYFversion + " JP";
     }
 
     /// <summary>

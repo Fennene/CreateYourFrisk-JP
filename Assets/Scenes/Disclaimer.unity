@@ -249,7 +249,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'v0.6.5
+  m_Text: 'v0.6.5 JP
 
 '
 --- !u!222 &589038335
@@ -391,8 +391,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: abd91933b51b6fc47931c535c62c6929, type: 3}
-    m_FontSize: 18
+    m_Font: {fileID: 12800000, guid: 7fe983e670a450e418df9fab8c7128e1, type: 3}
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -403,7 +403,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: For support and newest versions, go to <b>/r/Unitale</b>.
+  m_Text: "\u6700\u65B0\u30D0\u30FC\u30B8\u30E7\u30F3\u306E\u60C5\u5831\u306F<b>/r/Unitale</b>\u306B\u3042\u308A\u307E\u3059\u3002"
 --- !u!222 &890690847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -436,7 +436,7 @@ RectTransform:
   m_GameObject: {fileID: 1020003805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 1483471535}
   m_RootOrder: 4
@@ -466,8 +466,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: abd91933b51b6fc47931c535c62c6929, type: 3}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 7fe983e670a450e418df9fab8c7128e1, type: 3}
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -478,9 +478,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press <b>Space</b> or <b>Click</b> for the
-
-    <color="#ff0000"><b>Mod Selection Screen</b></color>'
+  m_Text: "<b>Space\u30AD\u30FC</b>\u307E\u305F\u306F<b>\u30AF\u30EA\u30C3\u30AF</b>\u3067\n<color=\"#ff0000\"><b>Mod\u9078\u629E\u753B\u9762</b></color>\u306B\u79FB\u52D5"
 --- !u!222 &1020003808
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -612,7 +610,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: abd91933b51b6fc47931c535c62c6929, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fe983e670a450e418df9fab8c7128e1, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -624,8 +622,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Create Your Frisk is not owned by Toby Fox. Selling this engine or its mods
-    is <b>illegal</b>.
+  m_Text: "CreateYourFrisk\u306FToby Fox\u306E\u3082\u306E\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002\u3053\u306E\u30A8\u30F3\u30B8\u30F3\u3092\u8CA9\u58F2\u3059\u308B\u3053\u3068\u306F<b>\u9055\u6CD5</b>\u3067\u3059\u3002"
 --- !u!222 &1450756124
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -854,7 +851,7 @@ RectTransform:
   m_GameObject: {fileID: 2007236152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 1483471535}
   m_RootOrder: 6
@@ -884,8 +881,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: abd91933b51b6fc47931c535c62c6929, type: 3}
-    m_FontSize: 22
+    m_Font: {fileID: 12800000, guid: 7fe983e670a450e418df9fab8c7128e1, type: 3}
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -893,10 +890,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <b>Lua experience is <color='red'>REQUIRED</color> to make your own mods!!</b>
+  m_Text: "<b>Mod\u88FD\u4F5C\u306B\u306FLua\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u306E\u6280\u8853\u304C\u5FC5\u8981\u3067\u3059\u3002</b>"
 --- !u!222 &2007236155
 CanvasRenderer:
   m_ObjectHideFlags: 0
