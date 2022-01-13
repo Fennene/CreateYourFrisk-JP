@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+since you're here anyway: there's a small easter egg on the text commands page but it's probably not worth finding, sorry
+you may notice this page's code is garbage: i'm not a web designer! ;-;
+it's w3c valid, at least
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>CYF Documentation - The Pixel-Perfect Collision System</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/themesidebar.css" rel="stylesheet">
+    <link href="../css/shThemeRDark.css" rel="stylesheet">
+</head>
+<body>
+<img src="../img/bg2.png" alt="Undertale background" class="backimg">
+<div class="container arena black">
+    <div class="col-md-2">
+        <!--navigation-->
+        <nav class="nav-sidebar">
+            <ul class="nav tabs">
+                <li class="li-header">Basics</li>
+                    <li><a href="../documentation.html">Welcome</a></li>
+                    <li><a href="howtoread.html">How to read this documentation</a></li>
+                    <hr style="margin-top:-2.5px;margin-bottom:2.5px;">
+                    <li><a href="controls.html">Controls</a></li>
+                    <li><a href="basic.html">Basic setup</a></li>
+                    <li><a href="unity.html"><span class="CYF"></span> Unity Setup (Optional)</a></li>
+                    <li><a href="variables.html">Special Variables</a></li>
+                    <li><a href="terms.html">Terminology</a></li>
+                <li class="li-header">API</li>
+                    <li><a href="api-text.html">Text commands</a></li>
+                    <li class="new"><a href="api-events.html">Game events</a></li>
+                    <hr style="margin-top:-2.5px;margin-bottom:2.5px;">
+                    <li class="li-indent">Functions &amp; Objects:</li>
+                        <li class="li-indent new"><a href="api-functions-main.html">Misc. Functions</a></li>
+                        <li class="li-indent new"><a href="api-functions-player.html">The Player Object</a></li>
+                        <li class="li-indent"><a href="api-functions-script.html">The Script Object</a></li>
+                        <li class="li-indent"><a href="api-functions-audio.html">The Audio Object</a></li>
+                        <li class="li-indent"><a href="api-functions-newaudio.html"><span class="CYF"></span> The NewAudio Object</a></li>
+                        <li class="li-indent"><a href="api-functions-input.html">The Input Object</a></li>
+                        <li class="li-indent"><a href="api-functions-time.html">The Time Object</a></li>
+                        <li class="li-indent"><a href="cyf-inventory.html"><span class="CYF"></span> The Inventory Object</a></li>
+                        <li class="li-indent new"><a href="api-functions-misc.html"><span class="CYF"></span>The Misc Object</a></li>
+                        <li class="li-indent new"><a href="api-functions-discord.html"><span class="CYF"></span> The Discord Object</a></li>
+                        <li class="li-indent"><a href="api-functions-waves.html">The Arena Object</a></li>
+                    <hr style="margin-top:-2.5px;margin-bottom:2.5px;">
+                    <li><a href="api-projectile.html">Projectile management</a></li>
+                    <li class="active" style="margin-left:5px;">&gt; <span class="CYF"></span> The Pixel-Perfect Collision System &lt;</li>
+                    <li class="new"><a href="api-animation.html">Sprites &amp; Animation</a></li>
+                    <li class="new"><a href="cyf-text.html"><span class="CYF"></span> The Text Object</a></li>
+                    <hr style="margin-top:-2.5px;margin-bottom:2.5px;">
+                <li class="li-header"></span><span class="CYF"></span> <span class="new"></span>Shaders</li>
+                    <li><a href="shaders.html">Introduction</a></li>
+                    <li><a href="shaders-object.html">The Shader Object</a></li>
+                    <li><a href="shaders-coding.html">Coding a Shader</a></li>
+                    <hr style="margin-top:10px;margin-bottom:10px;">
+                <li class="li-header"><span class="CYF"></span> Overworld</li>
+                    <li class="new"><a href="overworld.html">Basics</a></li>
+                    <li><a href="overworld-howto-map.html">How to create a map</a></li>
+                    <li><a href="overworld-howto-event.html">How to create an event</a></li>
+                    <li><a href="overworld-howto-animevent.html">How to animate an event</a></li>
+                    <li class="new"><a href="overworld-howto-shop.html">How to create a shop</a></li>
+                    <hr style="margin-top:-2.5px;margin-bottom:2.5px;">
+                    <li class="li-indent"><span class="CYF"></span> Overworld Objects:</li>
+                        <li class="li-indent"><a href="overworld-object-general.html">The General Object</a></li>
+                        <li class="li-indent"><a href="overworld-object-event.html">The Event Object</a></li>
+                        <li class="li-indent"><a href="overworld-object-player.html">The Player Object</a></li>
+                        <li class="li-indent"><a href="overworld-object-screen.html">The Screen Object</a></li>
+                        <li class="li-indent"><a href="overworld-object-inventory.html">The Inventory Object</a></li>
+                        <li class="li-indent new"><a href="overworld-object-map.html">The Map Object</a></li>
+                    <hr style="margin-top:-2.5px;margin-bottom:2.5px;">
+                <li class="li-header">Resources</li>
+                    <li><a href="../media/dialogoptions.png">Dialog bubble names</a></li>
+                    <li><a href="api-keys.html"><span class="CYF"></span> Key List</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--tabs'n'shit-->
+    <div class="tab-content col-md-10">
+        <div class="tab-pane active text-style" id="cyf-ppcollision">
+            <h2><span class="CYF"></span> The Pixel-Perfect Collision System</h2><br><br>
+                <p>Have you had enough of Unitale's default rectangular collisions and having to use thousands of lines
+                of <span class="term">if</span> statements in <span class="term">OnHit</span> just to get precise
+                collisions? Then the Pixel-Perfect Collision System is for YOU!</p>
+                <p>You can use this system for your entire encounter with <span class="term">SetPPCollision(bool)</span>,
+                or you can apply it just to a bullet with <span class="term">bullet.ppcollision</span>.
+                The bullet's <span class="term">ppcollision</span> value will override the encounter's
+                <span class="term">ppcollision</span> value.</p>
+                <!-- <p>But wait just a minute before rushing to use the Pixel-Perfect Collision System...or not, do as you want!</p> -->
+                <p>The Pixel-Perfect Collision System now supports bullets with scale! You can rotate and move bullets
+                like always and collision will still work! (this is why it took me one week to make this feature)</p>
+                <p>One last tip: The Pixel-Perfect Collision System is more resource-intensive than the Normal Collision
+                System. Don't use Pixel-Perfect for bullets that won't damage you, as that will just waste resources!</p>
+
+            <hr>
+            <img src="../img/PP.png">
+            <br><br>
+            <h4>Note: PPCollision does <b><u>NOT</u></b> affect the hitboxes shown when pressing <span class="term">H</span> with the debugger open.</h4>
+            <hr>
+            <p>
+                <br><span class="function">SetPPCollision(<span class="boolean"></span> bool) [E/M/W]</span>
+                Call this to set the encounter's <b style="color:#fff">default</b> collision system.
+                <br><br>
+                Enter <span class="term">false</span> for the regular "Unitale" system, or <span class="term">true</span> for PPCollision.
+                <br><br>
+                <font color="#fff">* Calling this will force all bullets with <span class="term">Bullet.ppchanged</span> as
+                <span class="term">false</span> to use the collision system you enter here (see above).
+                <br><br>
+                <span class="term">Bullet.ppchanged</span> will remain <span class="term">false</span>.</font>
+                <br><br>
+                The initial value is <span class="term">false</span>.
+            </p>
+
+            <hr>
+            <i>From <span class="ref">Projectile management</ref></i>:
+            <br><br>
+
+            <p>
+                <br><span class="function"><span class="boolean"></span> Bullet.ppcollision</span>
+                If this is true, the bullet will use the Pixel-Perfect Collision system.
+                <br><br>
+                By default, this is the encounter's <b style="color:#fff">default</b> collision system.
+                <br><br>
+                <font color="#fff">* Manually setting this will set <span class="term">Bullet.ppchanged</span> to true.</font>
+            </p>
+            <p>
+                <br><span class="function"><span class="CYF"></span> <span class="boolean"></span> Bullet.ppchanged (read-only)</span>
+                Tells you if the bullet's collision system has been changed by manually changing <span class="term">Bullet.ppcollision</span>.
+                <br><br>
+                <font color="#fff">* Bullets with <span class="term">Bullet.ppchanged</span> set to true will NOT be affected by future calls of<br>
+                <span class="term">SetPPCollision</span>.</font>
+                <br><br>
+                Will be false after you call <span class="term">Bullet.ResetCollisionSystem()</span>, or if you haven't changed
+                <span class="term">Bullet.ppcollision</span>.
+            </p>
+            <p>
+                <br><span class="function"><span class="CYF"></span> Bullet.ResetCollisionSystem()</span>
+                Resets the collision system of the bullet to the encounter's <b style="color:#fff">default</b> collision system.
+                <br><br>
+                The default collision system is set by <span class="term">SetPPCollision</span>.
+            </p>
+        </div>
+
+        <div class="tab-pane text-style" id="mercy">
+            <h2 style="text-decoration: none; line-height:50px;">
+                * YOU WON!<br>
+                * You earned 0 EXP and 0 gold.<br>
+                * also the nav menu is broken now
+            </h2><br>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-xs-3"><img class="centerbt black" alt="Undertale fake button" src="../img/fightbt_0.png" height="42">
+    </div>
+    <div class="col-xs-3"><img class="centerbt black" alt="Undertale fake button" src="../img/actbt_0.png" height="42">
+    </div>
+    <div class="col-xs-3"><img class="centerbt black" alt="Undertale fake button" src="../img/itembt_0.png" height="42">
+    </div>
+    <div class="col-xs-3"><a href="#mercy" data-toggle="tab"><img class="centerbt black" alt="Undertale fake button"
+                                                                  src="../img/mercybt_0.png" height="42"></a>
+    </div>
+</div>
+<br>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/show_hide_comments.js"></script>
+
+<script type="text/javascript" src="../js/FontToggleButton.js"></script>
+</body>
+</html>
