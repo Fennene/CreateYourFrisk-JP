@@ -1,41 +1,57 @@
-# Create Your Frisk - Lua moddable Undertale engine
+# Create Your Frisk - Luaで作成するUndertaleエンジン
 
-Welcome to the Git repository for **Create Your Frisk**, a fork of [**Unitale**](https://github.com/lvk/Unitale/) by lvk!
+### !注意!: これは公式のCreateYourFriskではありません!
 
-When testing, you'll want to load the Disclaimer scene from the Scenes folder.
+公式のCreateYourFriskは[**こちら**](https://github.com/RhenaudTheLukark/CreateYourFrisk)
 
-Editing the Overworld requires **Unity** (see **Unity Version** below).
+<br></br>
+**Create Your Frisk 日本語訳バージョン**のGitリポジトリへようこそ!
 
-We also have a [**Discord server**](https://discord.gg/GFJ5277)! Feel free to check it out if you want to be in touch with Unitale and Create Your Frisk's community!
+Create Your Friskは lvk氏による[**Unitale**](https://github.com/lvk/Unitale/)のフォークです。
 
-***
+テストを行う場合は、`Scenes`フォルダ内の`Disclaimer`をロードしてください。
 
-## Download
+オーバーワールドを編集するには**Unity**が必要です。(必要な**Unity Version**は下記にあります。)
 
-To download the engine, go to [**the releases page**](https://github.com/RhenaudTheLukark/CreateYourFrisk/releases).
+Create Your Friskには公式の[**Discord サーバー**](https://discord.gg/GFJ5277)があります! UnitaleやCreateYourFriskと連絡をしたい場合は気軽に来てね。
 
-***
-
-## Unity Version
-
-CYF's latest version is **v0.6.4**. It was built using **Unity Personal 2018.2.13f1**.
-
-To get this version of Unity, either:
-
-* [**Download the Unity Hub**](https://unity3d.com/get-unity/download),  
-* [**Find it in the Unity Version Archive**](https://unity3d.com/get-unity/download/archive) (remember, it's **2018.2.13**) or  
-* [**Click here for a direct download**](https://netstorage.unity3d.com/unity/83fbdcd35118/UnityDownloadAssistant-2018.2.13f1.exe).
+日本語版のDiscordサーバーは現時点では存在しません。
 
 ***
 
-## Required files
+## 翻訳に関して
 
-Please keep the mods and the resources which are in the Mods and Default folders, unless you know what you're doing.  
-~~The only mods you can remove safely are Mionn and Donald Trump.~~ *(Removed as of CYF v0.6.2)*
+正しく完璧に翻訳されている保証はありません。
+
+また、オーバーワールド関係や、一部のものに関しては翻訳できていません。
 
 ***
 
-## Licenses
+## ダウンロード
 
-Create your Frisk is released under the GNU General Public License 3.0.  
-We are using MoonSharp as our Lua interpreter, written by Marco Mastropaolo. The binary is included in `/Assets/Plugins`. License details in `MOONSHARP_LICENSE`.
+このエンジンは、[**the releases page**](https://github.com/Fennene/CreateYourFrisk-JP/releases)でダウンロードできます。
+
+***
+
+## Unityのバージョン
+
+CYFの最新バージョンは**v0.6.5 JP-1**で、**Unity Personal 2018.2.13f1**を使用して作成されています。
+
+Unityのバージョンは下記のリンクからダウンロードできます:
+
+* [**Unity Hub のダウンロード**](https://unity3d.com/get-unity/download)  
+* [**Unityの古いバージョンのアーカイブページ**](https://unity3d.com/get-unity/download/archive) (**2018.2.13**を探してください。) もしくは
+* [**直接ダウンロード**](https://netstorage.unity3d.com/unity/83fbdcd35118/UnityDownloadAssistant-2018.2.13f1.exe)
+
+***
+
+## 必要なファイル
+
+ファイル階層などの仕組みがよく分からない場合は、`Mods`フォルダや`Default`フォルダの中身をそのままにしてください。 
+
+***
+
+## ライセンス
+
+Create your Frisk は the GNU General Public License 3.0 のライセンスで作成されています。  
+また、Marco Mastropaolo氏のMoonSharp(Luaインタプリタ)を使用しています。バイナリは`/Assets/Plugins`にあり、そのライセンスの詳細は`MOONSHARP_LICENSE`に書かれています。
